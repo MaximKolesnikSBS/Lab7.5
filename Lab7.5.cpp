@@ -52,7 +52,7 @@ double calculations(int obj1)
 	const unsigned short obj2 = 8;
 	for (int i = 0; i < obj2; i++) 
 	{
-		sh += pow(obj1, 2 * i) / factorial(2 * i);
+		sh += pow(obj1, 2 * i + 1) / factorial(2 * i + 1);
 	}
 	return sh;
 }
