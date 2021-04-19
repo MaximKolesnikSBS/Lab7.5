@@ -15,9 +15,11 @@ class SimpleClass
 {
 public:
 	static int x;
+	static int n;
 	void show();
-} obj1;
+} obj1, obj2;
 int SimpleClass::x;
+int SimpleClass::n;
 
 int value() 
 {
@@ -39,16 +41,16 @@ int value()
 	}
 }
 
-int factorial(int n) 
+int factorial(int obj2) 
 {
-	return (n == 0) ? 1 : n * factorial(n - 1);
+	return (obj2 == 0) ? 1 : obj2 * factorial(obj2 - 1);
 }
 
 double calculations(int obj1)
 {
 	double sh = 0;
-	const unsigned short n = 8;
-	for (int i = 0; i < n; i++) 
+	const unsigned short obj2 = 8;
+	for (int i = 0; i < obj2; i++) 
 	{
 		sh += pow(obj1, 2 * i) / factorial(2 * i);
 	}
